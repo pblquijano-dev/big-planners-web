@@ -11,7 +11,7 @@ module.exports = {
         m3: {
           primary: '#A3002E',
           'primary-container': '#FFDAD9',
-          secondary: '#006492',
+          secondary: '#D58936',
           surface: '#FFF8F7',
           outline: '#857372',
         }

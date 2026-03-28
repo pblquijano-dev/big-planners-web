@@ -1,5 +1,6 @@
 import React from 'react';
 import bgImage from '../assets/images/hero-bg.jpg';
+import Button from './Button';
 
 const Hero = () => {
   return (
@@ -20,12 +21,13 @@ const Hero = () => {
           Experiencias inolvidables, destinos exóticos y el mejor servicio para tu viaje ideal.
         </p>
         
-        <a 
-          href="#paquetes"
-          className="bg-m3-primary hover:bg-[#8A0027] text-white font-heading font-bold text-lg px-10 py-4 rounded-m3 transition-all duration-300 shadow-m3-lg hover:shadow-m3-xl transform hover:-translate-y-1"
+        <Button
+          variant="elevated"
+          className="transition-all duration-300 shadow-m3-lg hover:shadow-m3-xl transform hover:-translate-y-1"
+          size="large"
         >
           Explorar Destinos
-        </a>
+        </Button>
       </div>
     </div>
   );
