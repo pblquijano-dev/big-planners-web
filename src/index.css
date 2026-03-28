@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Helper to stop scrolling when modal is open */
+  .overflow-hidden-modal {
+    overflow: hidden !important;
+  }
+}
