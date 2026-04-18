@@ -37,6 +37,7 @@ const Navbar = () => {
           <a href="#paquetes" className="hover:text-m3-primary-container transition-colors">Paquetes</a>
           <a href="#nosotros" className="hover:text-m3-primary-container transition-colors">Nosotros</a>
           <a href="#testimonios" className="hover:text-m3-primary-container transition-colors">Testimonios</a>
+          <a href="#faq" className="hover:text-m3-primary-container transition-colors">FAQ</a>
         </div>
 
         {/* Mobile menu button (Simplified for now) */}
