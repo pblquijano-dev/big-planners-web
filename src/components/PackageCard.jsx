@@ -3,7 +3,7 @@ import React from 'react';
 const PackageCard = ({ data, onOpenModal }) => {
   return (
     <div 
-      className="bg-white rounded-m3 shadow-m3-sm hover:shadow-m3-xl transition-all duration-300 overflow-hidden cursor-pointer group flex flex-col h-full"
+      className="bg-white rounded-m3 shadow-m3-sm hover:shadow-m3-md transition-all duration-300 overflow-hidden cursor-pointer group flex flex-col h-full"
       onClick={() => onOpenModal(data)}
     >
       {/* Image container with zoom effect on hover */}
