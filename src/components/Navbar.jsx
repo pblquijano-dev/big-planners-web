@@ -1,35 +1,19 @@
-import React, { useState, useEffect } from 'react';
 import logo from '../assets/images/BigPlanners.jpg';
 
-const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Change state if scrolled down 50px
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
+const Navbar = ({isScrolled}) => {
+  
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-m3-primary shadow-m3-lg py-4'
+          ? 'bg-m3-primaryDark border-b-2 md:border-b-4 border-m3-primary shadow-m3-lg py-4 rounded-br-0 md:rounded-br-3xl'
           : 'bg-transparent py-6'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center relative">
         {/* Logo */}
-        <div className=" w-[164px]" />
-        <img src={logo} className={`absolute rounded z-50 transition-all duration-300 shadow-m3-xl ${isScrolled ? 'left-0 top-0 h-[120px] w-[120px]' : 'left-1/2 -translate-x-1/2 top-[60px] h-[164px] w-[164px]'}`} alt="Logo" />
+        <div className="w-[164px]" />
+        <img src={logo} className={`absolute rounded-full border-2 md:border-4 border-m3-primary z-50 transition-all duration-300 shadow-m3-xl top-[-8px] left-1/2 translate-x-[-50%] h-[80px] w-[80px] md:left-0 md:translate-x-0 md:h-[120px] md:w-[120px] ${isScrolled ? 'opacity-100' : 'opacity-0'}`} alt="Logo" />
 
 
         {/* Desktop Menu */}

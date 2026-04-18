@@ -10,6 +10,7 @@ module.exports = {
         // Material Design 3 Custom Tokens
         m3: {
           primary: '#A3002E',
+          primaryDark: '#850026',
           'primary-container': '#FFDAD9',
           secondary: '#D58936',
           surface: '#FFF8F7',

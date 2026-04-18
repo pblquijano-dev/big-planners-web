@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar.jsx';
 import Hero from './Hero.jsx';
 import Packages from './Packages.jsx';
@@ -8,12 +9,28 @@ import Footer from './Footer.jsx';
 import WhatsAppFAB from './WhatsAppFAB.jsx';
 
 const App = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      // Change state if scrolled down 50px
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
   return (
     <div className="flex flex-col min-h-screen bg-m3-surface">
-      <Navbar />
+      <Navbar isScrolled={isScrolled}/>
       
       <main className="flex-grow">
-        <Hero />
+        <Hero isScrolled={isScrolled}/>
         
         <Packages />
         
