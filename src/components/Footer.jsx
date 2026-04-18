@@ -9,13 +9,16 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="font-heading text-2xl font-bold text-white mb-4">Big Planners</h3>
             <p className="font-body text-gray-400 mb-6 max-w-sm">
-              Tu agencia de viajes de confianza. Diseñamos experiencias a la medida con el respaldo
-              de profesionales apasionados por descubrir el mundo.
+              Ofrecemos todo tipo de paquetes para familias, bodas, despedidas de solter@s, destinos
+              nacionales e internacionales, viajes de graduación, viajes de incentivos y mucho
+              mas...
             </p>
             <div className="flex gap-4">
               {/* Social Icons Placeholders */}
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/Bigplannersmid"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-m3-primary hover:text-white transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -27,7 +30,9 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/bigplannersmid/"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-m3-primary hover:text-white transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -52,12 +57,17 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#nosotros" className="hover:text-m3-primary transition-colors">
-                  Por qué Nosotros
+                  ¿Por qué Nosotros?
                 </a>
               </li>
               <li>
                 <a href="#testimonios" className="hover:text-m3-primary transition-colors">
-                  Testimonios
+                  ¿Qué dicen de nosotros?
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-m3-primary transition-colors">
+                  Preguntas Frecuentes
                 </a>
               </li>
             </ul>
@@ -88,9 +98,9 @@ const Footer = () => {
                   />
                 </svg>
                 <span>
-                  Av. Reforma 222, Piso 14
+                  Av. Montejo 485, Mérida
                   <br />
-                  CDMX, México
+                  Yucatán, México
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -107,7 +117,7 @@ const Footer = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span>hola@bigplanners.com</span>
+                <span>hola@bigplanners.mx</span>
               </li>
             </ul>
           </div>
