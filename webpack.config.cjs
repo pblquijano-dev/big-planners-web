@@ -53,10 +53,7 @@ module.exports = (env, argv) => {
     ],
     optimization: {
       minimize: isProduction,
-      minimizer: [
-        new TerserPlugin(),
-        new CssMinimizerPlugin(),
-      ],
+      minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
     },
     devServer: {
       port: 3004,

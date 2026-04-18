@@ -10,7 +10,7 @@ import WhatsAppFAB from './WhatsAppFAB.jsx';
 
 const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       // Change state if scrolled down 50px
@@ -24,24 +24,23 @@ const App = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
   return (
     <div className="flex flex-col min-h-screen bg-m3-surface">
-      <Navbar isScrolled={isScrolled}/>
-      
+      <Navbar isScrolled={isScrolled} />
+
       <main className="flex-grow">
-        <Hero isScrolled={isScrolled}/>
-        
+        <Hero isScrolled={isScrolled} />
+
         <Packages />
-        
+
         <Authority />
-      
+
         <Testimonials />
 
-        <hr className='border-m3-outline w-[40%] mx-auto opacity-30' />
+        <hr className="border-m3-outline w-[40%] mx-auto opacity-30" />
 
         <FAQ />
-
       </main>
 
       <Footer />
