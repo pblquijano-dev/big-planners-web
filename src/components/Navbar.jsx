@@ -1,5 +1,6 @@
 import logo from '../assets/images/BigPlanners.jpg';
 import { useTranslation } from 'react-i18next';
+import { cn } from '../utils';
 
 const Navbar = ({ isScrolled }) => {
   const { t, i18n } = useTranslation();
@@ -37,14 +38,26 @@ const Navbar = ({ isScrolled }) => {
           </div>
 
           {/* Language Switcher */}
-          <div className="flex gap-2 text-sm font-bold font-heading bg-m3-surface text-m3-primary px-2 rounded-full">
+          <div
+            className={cn(
+              'flex gap-2 text-sm font-bold font-heading px-2 rounded-full border-2 border-m3-primary',
+              isScrolled ? 'bg-m3-surface text-m3-primary' : 'bg-m3-primary text-m3-surface'
+            )}
+          >
             <button
               onClick={() => i18n.changeLanguage('es')}
               className={`transition-colors ${i18n.resolvedLanguage?.startsWith('es') ? 'opacity-100 drop-shadow-md' : 'opacity-60 hover:opacity-80'}`}
             >
               ES
             </button>
-            <span className="text-m3-primary opacity-60">|</span>
+            <span
+              className={cn(
+                'opacity-60 leading-snug',
+                isScrolled ? 'text-m3-primary' : 'text-m3-surface'
+              )}
+            >
+              |
+            </span>
             <button
               onClick={() => i18n.changeLanguage('en')}
               className={`transition-colors ${i18n.resolvedLanguage?.startsWith('en') ? 'opacity-100 drop-shadow-md' : 'opacity-60 hover:opacity-80'}`}
