@@ -1,0 +1,175 @@
+{
+  "navbar": {
+    "packages": "Paquetes",
+    "about": "Nosotros",
+    "faq": "FAQ",
+    "testimonials": "Testimonios"
+  },
+  "hero": {
+    "title_part1": "Tus próximas vacaciones",
+    "title_part2": "comienzan aquí",
+    "subtitle": "Experiencias inolvidables, destinos exóticos y el mejor servicio para tu viaje ideal.",
+    "cta": "Explorar Destinos"
+  },
+  "packages": {
+    "title_part1": "Paquetes",
+    "title_part2": "Destacados",
+    "subtitle": "Hemos seleccionado cuidadosamente las mejores experiencias alrededor del mundo. Elige tu próximo destino o contáctanos para armar un viaje a tu medida.",
+    "card_see_details": "Ver Detalles",
+    "modal_includes": "¿Qué incluye?",
+    "modal_from": "Desde",
+    "modal_close": "Cerrar",
+    "modal_quote": "Cotizar ahora",
+    "modal_whatsapp_msg": "Hola Big Planners, vengo de su sitio web y me gustaría recibir información sobre el paquete a {{destination}}.",
+    "list": [
+      {
+        "title": "Paraíso en Cancún",
+        "duration": "6 Días / 5 Noches",
+        "price": "$899 USD",
+        "shortDescription": "Disfruta de hermosas playas de arena blanca, aguas turquesas cristalinas y la vida nocturna más vibrante del Caribe mexicano.",
+        "description": "Cancún es mucho más que un destino de playa. Este paquete te ofrece una experiencia todo incluido en uno de los mejores resorts de la zona hotelera. Descansa frente al mar Caribe, disfruta de gastronomía internacional, o aventúrate a los cenotes y ruinas mayas cercanas.",
+        "includes": [
+          "Vuelo redondo",
+          "Hotel 5 estrellas All-Inclusive",
+          "Traslados Aeropuerto-Hotel",
+          "Tour a Isla Mujeres",
+          "Seguro de viaje básico"
+        ]
+      },
+      {
+        "title": "Europa Clásica",
+        "duration": "15 Días / 14 Noches",
+        "price": "$2,450 USD",
+        "shortDescription": "Un recorrido mágico por las capitales más emblemáticas: París, Roma, Venecia, Madrid y Londres, con guías en español.",
+        "description": "El viaje que todos deben hacer al menos una vez en la vida. Pasea por los Campos Elíseos en París, navega en las góndolas de Venecia, y maravíllate con el Coliseo en Roma. Todo en un recorrido perfectamente orquestado para que solo te preocupes por disfrutar.",
+        "includes": [
+          "Vuelos intercontinentales",
+          "Trenes de alta velocidad TGV/Eurostar",
+          "Hoteles céntricos 4 estrellas",
+          "Desayuno buffet diario",
+          "Entradas a museos principales",
+          "Guía acompañante en español"
+        ]
+      },
+      {
+        "title": "Aventura en Machu Picchu",
+        "duration": "7 Días / 6 Noches",
+        "price": "$1,200 USD",
+        "shortDescription": "Conecta con la historia en una expedición inolvidable por Cuzco, el Valle Sagrado y la majestuosa ciudadela Inca.",
+        "description": "Vive la magia de los Andes peruanos. Este recorrido cultural y de aventura te llevará desde la capital histórica, Cuzco, a través del colorido Valle Sagrado de los Incas, culminando con el impresionante amanecer en Machu Picchu. Incluye viaje en tren panorámico.",
+        "includes": [
+          "Vuelo desde Lima a Cuzco",
+          "Alojamiento en hoteles boutique",
+          "Tren panorámico Vistadome",
+          "Boleto de ingreso a Machu Picchu",
+          "Guía experto local"
+        ]
+      },
+      {
+        "title": "Esencia de Japón",
+        "duration": "12 Días / 11 Noches",
+        "price": "$3,100 USD",
+        "shortDescription": "Descubre el contraste fascinante entre la tecnología futurista de Tokio y las tradiciones ancestrales de Kioto.",
+        "description": "Un viaje que despierta todos los sentidos. Experimenta el ajetreo de Shinjuku en Tokio, relájate en las aguas termales (onsen) tradicionales con vista al Monte Fuji, y pasea bajo los cerezos o las hojas de otoño en los históricos templos de Kioto y Nara.",
+        "includes": [
+          "Vuelos redondo internacional",
+          "Japan Rail Pass de 7 días",
+          "Alojamiento combinado (Hoteles y 1 noche en Ryokan)",
+          "Ceremonia del té en Kioto",
+          "WiFi de bolsillo ilimitado"
+        ]
+      }
+    ]
+  },
+  "authority": {
+    "title_part1": "¿Por qué elegir",
+    "subtitle": "Nuestra promesa es convertir tu viaje soñado en una realidad sin estrés, con respaldo humano y profesional 24/7.",
+    "stats": [
+      {
+        "number": "15+",
+        "title": "Años de Experiencia",
+        "description": "Llevando sueños y aventuras alrededor del globo."
+      },
+      {
+        "number": "10K+",
+        "title": "Viajeros Felices",
+        "description": "Garantía de satisfacción y sonrisas en cada vuelo."
+      },
+      {
+        "number": "24/7",
+        "title": "Atención Continua",
+        "description": "Soporte ininterrumpido en cada paso de tu aventura."
+      },
+      {
+        "number": "IATA",
+        "title": "Agencia Certificada",
+        "description": "Cumplimos con estrictos estándares internacionales de turismo."
+      }
+    ]
+  },
+  "testimonials": {
+    "title_part1": "Viajeros con",
+    "title_part2": "Historias",
+    "subtitle": "La sonrisa de nuestros clientes al volver a casa es nuestra mayor recompensa.",
+    "list": [
+      {
+        "name": "María Fernández",
+        "destination": "Viajó a París",
+        "quote": "Increíble servicio. No tuve que preocuparme por nada, Big Planners organizó todo al detalle y mi luna de miel fue perfecta. El hotel que eligieron fue mágico."
+      },
+      {
+        "name": "Carlos Mendoza",
+        "destination": "Viajó a Tokio",
+        "quote": "Siempre quise ir a Japón pero armar el viaje se sentía abrumador. Con ellos fue súper sencillo. Los traslados y guías locales fueron de primer nivel. ¡Totalmente recomendados!"
+      },
+      {
+        "name": "Familia Salazar",
+        "destination": "Viajó a Cancún",
+        "quote": "Un viaje en familia inolvidable. Lograron encontrar el balance perfecto entre descanso y actividades para los niños. El precio excelente por todo lo incluido."
+      }
+    ]
+  },
+  "faq": {
+    "title_part1": "Preguntas",
+    "title_part2": "Frecuentes",
+    "subtitle": "Resolvemos tus dudas principales para que solo te preocupes por empacar.",
+    "list": [
+      {
+        "question": "¿Qué incluye cada paquete de viaje?",
+        "answer": "La mayoría de nuestros paquetes incluyen vuelos redondos, alojamiento, traslados aeropuerto-hotel, y asistencia 24/7. Sin embargo, los detalles específicos pueden variar y siempre se adaptan a tus necesidades y presupuesto."
+      },
+      {
+        "question": "¿Ofrecen opciones para personalizar mi viaje?",
+        "answer": "¡Definitivamente! En Big Planners somos expertos en viajes a la medida. Si tienes un destino o actividad específica en mente, nuestros asesores se encargarán de diseñar el itinerario perfecto exclusivo para ti."
+      },
+      {
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Aceptamos todas las tarjetas de crédito y débito, transferencias bancarias y depósitos en efectivo. También contamos con opciones de meses sin intereses con tarjetas participantes en paquetes seleccionados."
+      },
+      {
+        "question": "¿Qué sucede si necesito cancelar o modificar mi viaje?",
+        "answer": "Las políticas de cancelación varían según la aerolínea y el hotel seleccionado. Nuestro equipo siempre te informará sobre las políticas antes de concretar tu reserva para que tengas total tranquilidad, y te asistiremos en caso de requerir algún cambio."
+      },
+      {
+        "question": "¿Brindan asistencia durante el viaje?",
+        "answer": "Sí, todos nuestros viajeros cuentan con atención continua 24/7 a través de nuestro canal exclusivo de WhatsApp. Si surge algún imprevisto durante tu viaje, estaremos listos para apoyarte de inmediato."
+      }
+    ]
+  },
+  "footer": {
+    "description": "Ofrecemos todo tipo de paquetes para familias, bodas, despedidas de solter@s, destinos nacionales e internacionales, viajes de graduación, viajes de incentivos y mucho mas...",
+    "nav_title": "Navegación",
+    "nav_packages": "Paquetes Destacados",
+    "nav_about": "¿Por qué Nosotros?",
+    "nav_testimonials": "¿Qué dicen de nosotros?",
+    "nav_faq": "Preguntas Frecuentes",
+    "contact_title": "Contacto",
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Aviso de Privacidad",
+    "terms": "Términos y Condiciones"
+  },
+  "whatsapp": {
+    "tooltip": "¡Escríbenos!",
+    "msg": "Hola Big Planners, vengo de su sitio web y me gustaría recibir información."
+  }
+}

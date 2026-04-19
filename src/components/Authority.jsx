@@ -1,12 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Authority = () => {
+  const { t } = useTranslation();
+  const statsText = t('authority.stats', { returnObjects: true });
+
   const stats = [
     {
       id: 1,
-      number: '15+',
-      title: 'Años de Experiencia',
-      description: 'Llevando sueños y aventuras alrededor del globo.',
+      number: statsText[0].number || '15+',
+      title: statsText[0].title || 'Años de Experiencia',
+      description: statsText[0].description || 'Llevando sueños y aventuras alrededor del globo.',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +30,9 @@ const Authority = () => {
     },
     {
       id: 2,
-      number: '10K+',
-      title: 'Viajeros Felices',
-      description: 'Garantía de satisfacción y sonrisas en cada vuelo.',
+      number: statsText[1].number || '10K+',
+      title: statsText[1].title || 'Viajeros Felices',
+      description: statsText[1].description || 'Garantía de satisfacción y sonrisas en cada vuelo.',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -48,9 +52,10 @@ const Authority = () => {
     },
     {
       id: 3,
-      number: '24/7',
-      title: 'Atención Continua',
-      description: 'Soporte ininterrumpido en cada paso de tu aventura.',
+      number: statsText[2].number || '24/7',
+      title: statsText[2].title || 'Atención Continua',
+      description:
+        statsText[2].description || 'Soporte ininterrumpido en cada paso de tu aventura.',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,9 +75,11 @@ const Authority = () => {
     },
     {
       id: 4,
-      number: 'IATA',
-      title: 'Agencia Certificada',
-      description: 'Cumplimos con estrictos estándares internacionales de turismo.',
+      number: statsText[3].number || 'IATA',
+      title: statsText[3].title || 'Agencia Certificada',
+      description:
+        statsText[3].description ||
+        'Cumplimos con estrictos estándares internacionales de turismo.',
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -97,12 +104,9 @@ const Authority = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="font-heading text-4xl font-bold text-gray-900 mb-4">
-            ¿Por qué elegir <span className="text-m3-primary">Big Planners</span>?
+            {t('authority.title_part1')} <span className="text-m3-primary">Big Planners</span>?
           </h2>
-          <p className="font-body text-lg text-gray-600">
-            Nuestra promesa es convertir tu viaje soñado en una realidad sin estrés, con respaldo
-            humano y profesional 24/7.
-          </p>
+          <p className="font-body text-lg text-gray-600">{t('authority.subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">

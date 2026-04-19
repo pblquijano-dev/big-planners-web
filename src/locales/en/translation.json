@@ -1,0 +1,175 @@
+{
+  "navbar": {
+    "packages": "Packages",
+    "about": "About Us",
+    "faq": "FAQ",
+    "testimonials": "Testimonials"
+  },
+  "hero": {
+    "title_part1": "Your next vacation",
+    "title_part2": "starts here",
+    "subtitle": "Unforgettable experiences, exotic destinations, and the best service for your ideal trip.",
+    "cta": "Explore Destinations"
+  },
+  "packages": {
+    "title_part1": "Featured",
+    "title_part2": "Packages",
+    "subtitle": "We have carefully selected the best experiences around the world. Choose your next destination or contact us to build a custom trip.",
+    "card_see_details": "See Details",
+    "modal_includes": "What's included?",
+    "modal_from": "From",
+    "modal_close": "Close",
+    "modal_quote": "Get a Quote",
+    "modal_whatsapp_msg": "Hello Big Planners, I am coming from your website and I would like to receive information about the package to {{destination}}.",
+    "list": [
+      {
+        "title": "Paradise in Cancun",
+        "duration": "6 Days / 5 Nights",
+        "price": "$899 USD",
+        "shortDescription": "Enjoy beautiful white sand beaches, crystal clear turquoise waters, and the most vibrant nightlife in the Mexican Caribbean.",
+        "description": "Cancun is much more than a beach destination. This package offers an all-inclusive experience in one of the best resorts in the hotel zone. Relax facing the Caribbean Sea, enjoy international cuisine, or venture to nearby cenotes and Mayan ruins.",
+        "includes": [
+          "Roundtrip flight",
+          "5-star All-Inclusive Hotel",
+          "Airport-Hotel Transfers",
+          "Tour to Isla Mujeres",
+          "Basic travel insurance"
+        ]
+      },
+      {
+        "title": "Classic Europe",
+        "duration": "15 Days / 14 Nights",
+        "price": "$2,450 USD",
+        "shortDescription": "A magical journey through the most emblematic capitals: Paris, Rome, Venice, Madrid, and London.",
+        "description": "The trip everyone should take at least once in their life. Stroll down the Champs-Elysees in Paris, sail on the gondolas of Venice, and marvel at the Colosseum in Rome. Everything in a perfectly orchestrated tour so you only worry about enjoying.",
+        "includes": [
+          "Intercontinental flights",
+          "High-speed TGV/Eurostar trains",
+          "Centrally located 4-star hotels",
+          "Daily buffet breakfast",
+          "Tickets to main museums",
+          "Spanish/English speaking guide"
+        ]
+      },
+      {
+        "title": "Adventure in Machu Picchu",
+        "duration": "7 Days / 6 Nights",
+        "price": "$1,200 USD",
+        "shortDescription": "Connect with history on an unforgettable expedition through Cuzco, the Sacred Valley, and the majestic Inca citadel.",
+        "description": "Experience the magic of the Peruvian Andes. This cultural and adventure tour will take you from the historic capital, Cuzco, through the colorful Sacred Valley of the Incas, culminating with the impressive sunrise at Machu Picchu. Includes panoramic train ride.",
+        "includes": [
+          "Flight from Lima to Cuzco",
+          "Accommodation in boutique hotels",
+          "Vistadome panoramic train",
+          "Machu Picchu admission ticket",
+          "Local expert guide"
+        ]
+      },
+      {
+        "title": "Essence of Japan",
+        "duration": "12 Days / 11 Nights",
+        "price": "$3,100 USD",
+        "shortDescription": "Discover the fascinating contrast between Tokyo's futuristic technology and Kyoto's ancestral traditions.",
+        "description": "A trip that awakens all the senses. Experience the hustle and bustle of Shinjuku in Tokyo, relax in traditional hot springs (onsen) overlooking Mount Fuji, and stroll under cherry blossoms or autumn leaves in the historic temples of Kyoto and Nara.",
+        "includes": [
+          "Roundtrip international flights",
+          "7-day Japan Rail Pass",
+          "Combined accommodation (Hotels and 1 night in Ryokan)",
+          "Tea ceremony in Kyoto",
+          "Unlimited pocket WiFi"
+        ]
+      }
+    ]
+  },
+  "authority": {
+    "title_part1": "Why choose",
+    "subtitle": "Our promise is to turn your dream trip into a stress-free reality, with human and professional support 24/7.",
+    "stats": [
+      {
+        "number": "15+",
+        "title": "Years of Experience",
+        "description": "Bringing dreams and adventures around the globe."
+      },
+      {
+        "number": "10K+",
+        "title": "Happy Travelers",
+        "description": "Satisfaction guarantee and smiles on every flight."
+      },
+      {
+        "number": "24/7",
+        "title": "Continuous Support",
+        "description": "Uninterrupted support every step of your adventure."
+      },
+      {
+        "number": "IATA",
+        "title": "Certified Agency",
+        "description": "We comply with strict international tourism standards."
+      }
+    ]
+  },
+  "testimonials": {
+    "title_part1": "Travelers with",
+    "title_part2": "Stories",
+    "subtitle": "The smile of our customers when returning home is our greatest reward.",
+    "list": [
+      {
+        "name": "Maria Fernandez",
+        "destination": "Traveled to Paris",
+        "quote": "Incredible service. I didn't have to worry about anything, Big Planners organized everything in detail and my honeymoon was perfect. The hotel they chose was magical."
+      },
+      {
+        "name": "Carlos Mendoza",
+        "destination": "Traveled to Tokyo",
+        "quote": "I always wanted to go to Japan but putting the trip together felt overwhelming. With them it was super simple. The transfers and local guides were top notch. Fully recommended!"
+      },
+      {
+        "name": "Salazar Family",
+        "destination": "Traveled to Cancun",
+        "quote": "An unforgettable family trip. They managed to find the perfect balance between rest and activities for the kids. Excellent price for everything included."
+      }
+    ]
+  },
+  "faq": {
+    "title_part1": "Frequently Asked",
+    "title_part2": "Questions",
+    "subtitle": "We solve your main doubts so you only worry about packing.",
+    "list": [
+      {
+        "question": "What does each travel package include?",
+        "answer": "Most of our packages include round-trip flights, accommodation, airport-hotel transfers, and 24/7 assistance. However, specific details may vary and are always adapted to your needs and budget."
+      },
+      {
+        "question": "Do you offer options to customize my trip?",
+        "answer": "Definitely! At Big Planners we are experts in tailor-made trips. If you have a specific destination or activity in mind, our advisors will design the perfect itinerary exclusively for you."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all credit and debit cards, bank transfers, and cash reserves. We also have options for months without interest with participating cards in selected packages."
+      },
+      {
+        "question": "What happens if I need to cancel or modify my trip?",
+        "answer": "Cancellation policies vary by airline and hotel selected. Our team will always inform you about the policies before finalizing your reservation so you have complete peace of mind, and we will assist you if any changes are required."
+      },
+      {
+        "question": "Do you provide assistance during the trip?",
+        "answer": "Yes, all our travelers have continuous 24/7 attention through our exclusive WhatsApp channel. If any unforeseen event arises during your trip, we will be ready to support you immediately."
+      }
+    ]
+  },
+  "footer": {
+    "description": "We offer all types of packages for families, weddings, bachelor/bachelorette parties, national and international destinations, graduation trips, incentive trips and much more...",
+    "nav_title": "Navigation",
+    "nav_packages": "Featured Packages",
+    "nav_about": "Why Us?",
+    "nav_testimonials": "What do they say about us?",
+    "nav_faq": "Frequently Asked Questions",
+    "contact_title": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  },
+  "whatsapp": {
+    "tooltip": "Message us!",
+    "msg": "Hello Big Planners, I am coming from your website and I would like to receive information."
+  }
+}

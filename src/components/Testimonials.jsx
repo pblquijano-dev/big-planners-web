@@ -1,32 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      id: 1,
-      name: 'María Fernández',
-      destination: 'Viajó a París',
-      quote:
-        'Increíble servicio. No tuve que preocuparme por nada, Big Planners organizó todo al detalle y mi luna de miel fue perfecta. El hotel que eligieron fue mágico.',
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: 'Carlos Mendoza',
-      destination: 'Viajó a Tokio',
-      quote:
-        'Siempre quise ir a Japón pero armar el viaje se sentía abrumador. Con ellos fue súper sencillo. Los traslados y guías locales fueron de primer nivel. ¡Totalmente recomendados!',
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: 'Familia Salazar',
-      destination: 'Viajó a Cancún',
-      quote:
-        'Un viaje en familia inolvidable. Lograron encontrar el balance perfecto entre descanso y actividades para los niños. El precio excelente por todo lo incluido.',
-      rating: 5,
-    },
-  ];
+  const { t } = useTranslation();
+  const testText = t('testimonials.list', { returnObjects: true });
+  const testimonials = testText.map((item, index) => ({ ...item, id: index + 1, rating: 5 }));
 
   // Helper to render stars
   const renderStars = (rating) => {
@@ -50,11 +28,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="font-heading text-4xl font-bold text-gray-900 mb-4">
-            Viajeros con <span className="text-m3-primary">Historias</span>
+            {t('testimonials.title_part1')}{' '}
+            <span className="text-m3-primary">{t('testimonials.title_part2')}</span>
           </h2>
-          <p className="font-body text-lg text-gray-600">
-            La sonrisa de nuestros clientes al volver a casa es nuestra mayor recompensa.
-          </p>
+          <p className="font-body text-lg text-gray-600">{t('testimonials.subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

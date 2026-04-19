@@ -1,8 +1,11 @@
 import bgImage from '../assets/images/hero-bg.jpg';
 import Button from './Button';
+import { useTranslation } from 'react-i18next';
 import logo from '../assets/images/BigPlanners.jpg';
 
 const Hero = ({ isScrolled }) => {
+  const { t } = useTranslation();
+
   return (
     <div
       className="relative h-screen w-full flex items-center justify-center bg-cover bg-bottom bg-no-repeat"
@@ -21,13 +24,13 @@ const Hero = ({ isScrolled }) => {
       />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
         <h1 className="font-heading font-bold text-5xl md:text-7xl text-white mb-6 drop-shadow-lg">
-          Tus próximas vacaciones
+          {t('hero.title_part1')}
           <br />
-          <span className="text-m3-primary-container">comienzan aquí</span>
+          <span className="text-m3-primary-container">{t('hero.title_part2')}</span>
         </h1>
 
         <p className="font-body text-xl md:text-2xl text-white/90 mb-10 max-w-2xl drop-shadow-md">
-          Experiencias inolvidables, destinos exóticos y el mejor servicio para tu viaje ideal.
+          {t('hero.subtitle')}
         </p>
 
         <Button
@@ -35,7 +38,7 @@ const Hero = ({ isScrolled }) => {
           className="transition-all duration-300 shadow-m3-lg hover:shadow-m3-xl transform hover:-translate-y-1"
           size="large"
         >
-          Explorar Destinos
+          {t('hero.cta')}
         </Button>
       </div>
     </div>

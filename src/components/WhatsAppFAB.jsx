@@ -1,10 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const WhatsAppFAB = () => {
+  const { t } = useTranslation();
   const whatsappNumber = '5215512345678';
-  const text = encodeURIComponent(
-    'Hola Big Planners, vengo de su sitio web y me gustaría recibir información.'
-  );
+  const text = encodeURIComponent(t('whatsapp.msg'));
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
 
   return (
@@ -26,7 +26,7 @@ const WhatsAppFAB = () => {
       </svg>
       {/* Tooltip on Hover */}
       <span className="absolute right-full mr-4 bg-gray-900 text-white text-sm font-body px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none before:content-[''] before:absolute before:left-full before:top-1/2 before:-translate-y-1/2 before:border-4 before:border-transparent before:border-l-gray-900">
-        ¡Escríbenos!
+        {t('whatsapp.tooltip')}
       </span>
     </a>
   );

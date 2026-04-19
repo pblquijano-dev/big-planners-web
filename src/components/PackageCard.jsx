@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const PackageCard = ({ data, onOpenModal }) => {
+  const { t } = useTranslation();
+
   return (
     <div
       className="bg-white rounded-m3 shadow-m3-sm hover:shadow-m3-md transition-all duration-300 overflow-hidden cursor-pointer group flex flex-col h-full"
@@ -45,7 +48,7 @@ const PackageCard = ({ data, onOpenModal }) => {
         </p>
 
         <button className="mt-auto w-full py-3 rounded-full border border-m3-outline text-m3-primary font-body font-medium hover:bg-m3-primary-container hover:border-transparent transition-colors">
-          Ver Detalles
+          {t('packages.card_see_details')}
         </button>
       </div>
     </div>

@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-m3-primary">
       <div className="container mx-auto px-6">
@@ -8,11 +11,7 @@ const Footer = () => {
           {/* Brand & About */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="font-heading text-2xl font-bold text-white mb-4">Big Planners</h3>
-            <p className="font-body text-gray-400 mb-6 max-w-sm">
-              Ofrecemos todo tipo de paquetes para familias, bodas, despedidas de solter@s, destinos
-              nacionales e internacionales, viajes de graduación, viajes de incentivos y mucho
-              mas...
-            </p>
+            <p className="font-body text-gray-400 mb-6 max-w-sm">{t('footer.description')}</p>
             <div className="flex gap-4">
               {/* Social Icons Placeholders */}
               <a
@@ -48,26 +47,28 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="font-heading text-lg font-semibold text-white mb-4">Navegación</h4>
+            <h4 className="font-heading text-lg font-semibold text-white mb-4">
+              {t('footer.nav_title')}
+            </h4>
             <ul className="space-y-2 font-body text-gray-400">
               <li>
                 <a href="#paquetes" className="hover:text-m3-primary transition-colors">
-                  Paquetes Destacados
+                  {t('footer.nav_packages')}
                 </a>
               </li>
               <li>
                 <a href="#nosotros" className="hover:text-m3-primary transition-colors">
-                  ¿Por qué Nosotros?
+                  {t('footer.nav_about')}
                 </a>
               </li>
               <li>
                 <a href="#testimonios" className="hover:text-m3-primary transition-colors">
-                  ¿Qué dicen de nosotros?
+                  {t('footer.nav_testimonials')}
                 </a>
               </li>
               <li>
                 <a href="#faq" className="hover:text-m3-primary transition-colors">
-                  Preguntas Frecuentes
+                  {t('footer.nav_faq')}
                 </a>
               </li>
             </ul>
@@ -75,7 +76,9 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading text-lg font-semibold text-white mb-4">Contacto</h4>
+            <h4 className="font-heading text-lg font-semibold text-white mb-4">
+              {t('footer.contact_title')}
+            </h4>
             <ul className="space-y-3 font-body text-gray-400">
               <li className="flex items-start gap-3">
                 <svg
@@ -125,15 +128,14 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8 mt-8 text-center md:flex md:justify-between md:text-left">
           <p className="font-body text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Big Planners Agencia de Viajes. Todos los derechos
-            reservados.
+            &copy; {new Date().getFullYear()} Big Planners Agencia de Viajes. {t('footer.rights')}
           </p>
           <div className="font-body text-gray-500 text-sm space-x-4">
             <a href="#" className="hover:text-white transition-colors">
-              Aviso de Privacidad
+              {t('footer.privacy')}
             </a>
             <a href="#" className="hover:text-white transition-colors">
-              Términos y Condiciones
+              {t('footer.terms')}
             </a>
           </div>
         </div>
