@@ -134,7 +134,7 @@ const Modal = ({ isOpen, onClose, packageData }) => {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-m3-primary hover:bg-[#8A0027] text-white px-8 py-3 rounded-full font-body font-medium shadow-m3-md hover:shadow-m3-lg transition-all flex items-center gap-2"
+              className="bg-m3-primary hover:bg-m3-primary/90 text-white px-8 py-3 rounded-full font-body font-medium shadow-m3-md hover:shadow-m3-lg transition-all flex items-center gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

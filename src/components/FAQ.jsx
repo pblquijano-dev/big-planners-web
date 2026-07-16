@@ -26,7 +26,7 @@ const FAQ = () => {
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className="bg-white rounded-m3 shadow-m3-sm overflow-hidden transition-all duration-300"
+              className="bg-white rounded-lg shadow-m3-sm overflow-hidden transition-all duration-300 border border-m3-outline/10"
             >
               <button
                 onClick={() => toggleSection(faq.id)}

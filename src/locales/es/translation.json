@@ -6,10 +6,10 @@
     "testimonials": "Testimonios"
   },
   "hero": {
-    "title_part1": "Tus próximas vacaciones",
-    "title_part2": "comienzan aquí",
-    "subtitle": "Experiencias inolvidables, destinos exóticos y el mejor servicio para tu viaje ideal.",
-    "cta": "Explorar Destinos"
+    "title_part1": "No viajas para escapar,",
+    "title_part2": "viajas para encontrarte",
+    "subtitle": "Diseñamos aventuras a la medida que transforman tu perspectiva y te reconectan con lo que realmente importa. Elige tu escenario y empieza a escribir tu historia.",
+    "cta": "Elige tu próxima aventura"
   },
   "packages": {
     "title_part1": "Paquetes",
@@ -26,8 +26,8 @@
         "title": "Paraíso en Cancún",
         "duration": "6 Días / 5 Noches",
         "price": "$899 USD",
-        "shortDescription": "Disfruta de hermosas playas de arena blanca, aguas turquesas cristalinas y la vida nocturna más vibrante del Caribe mexicano.",
-        "description": "Cancún es mucho más que un destino de playa. Este paquete te ofrece una experiencia todo incluido en uno de los mejores resorts de la zona hotelera. Descansa frente al mar Caribe, disfruta de gastronomía internacional, o aventúrate a los cenotes y ruinas mayas cercanas.",
+        "shortDescription": "Despierta con el sonido del Caribe, sumerge tus pies en arena blanca y olvídate del reloj en un santuario todo incluido.",
+        "description": "Cancún es el refugio donde el tiempo se detiene. Este paquete te ofrece una experiencia todo incluido en uno de los mejores resorts de la zona hotelera. Deja atrás el estrés cotidiano, disfruta de cenas gourmet exclusivas, y explora la mística de los cenotes mayas con guías privados dedicados enteramente a tu descanso.",
         "includes": [
           "Vuelo redondo",
           "Hotel 5 estrellas All-Inclusive",
@@ -40,8 +40,8 @@
         "title": "Europa Clásica",
         "duration": "15 Días / 14 Noches",
         "price": "$2,450 USD",
-        "shortDescription": "Un recorrido mágico por las capitales más emblemáticas: París, Roma, Venecia, Madrid y Londres, con guías en español.",
-        "description": "El viaje que todos deben hacer al menos una vez en la vida. Pasea por los Campos Elíseos en París, navega en las góndolas de Venecia, y maravíllate con el Coliseo en Roma. Todo en un recorrido perfectamente orquestado para que solo te preocupes por disfrutar.",
+        "shortDescription": "Recorre las avenidas iluminadas de París, navega los canales de Venecia y camina por la historia romana con todo perfectamente planeado.",
+        "description": "Un viaje de autodescubrimiento a través de la cuna del arte y la historia. Olvídate de las filas eternas y los transbordos confusos; viaja en trenes de alta velocidad y descansa en hoteles boutique seleccionados por su calidez y ubicación. Una experiencia diseñada para que tu única preocupación sea inspirarte.",
         "includes": [
           "Vuelos intercontinentales",
           "Trenes de alta velocidad TGV/Eurostar",
@@ -55,8 +55,8 @@
         "title": "Aventura en Machu Picchu",
         "duration": "7 Días / 6 Noches",
         "price": "$1,200 USD",
-        "shortDescription": "Conecta con la historia en una expedición inolvidable por Cuzco, el Valle Sagrado y la majestuosa ciudadela Inca.",
-        "description": "Vive la magia de los Andes peruanos. Este recorrido cultural y de aventura te llevará desde la capital histórica, Cuzco, a través del colorido Valle Sagrado de los Incas, culminando con el impresionante amanecer en Machu Picchu. Incluye viaje en tren panorámico.",
+        "shortDescription": "Siente la energía ancestral de los Andes al amanecer frente a la ciudadela sagrada y reconéctate con la naturaleza.",
+        "description": "Supera tus propios límites en una travesía mágica por Cuzco y el Valle Sagrado. Viajarás en un tren panorámico que te conectará con el paisaje andino antes de presenciar la majestuosidad de Machu Picchu. Una aventura transformadora respaldada por expertos locales para garantizar tu seguridad en cada sendero.",
         "includes": [
           "Vuelo desde Lima a Cuzco",
           "Alojamiento en hoteles boutique",
@@ -69,8 +69,8 @@
         "title": "Esencia de Japón",
         "duration": "12 Días / 11 Noches",
         "price": "$3,100 USD",
-        "shortDescription": "Descubre el contraste fascinante entre la tecnología futurista de Tokio y las tradiciones ancestrales de Kioto.",
-        "description": "Un viaje que despierta todos los sentidos. Experimenta el ajetreo de Shinjuku en Tokio, relájate en las aguas termales (onsen) tradicionales con vista al Monte Fuji, y pasea bajo los cerezos o las hojas de otoño en los históricos templos de Kioto y Nara.",
+        "shortDescription": "Camina bajo los templos ancestrales de Kioto y sumérgete en el misticismo del Monte Fuji antes del mañana futurista de Tokio.",
+        "description": "El choque perfecto entre la tradición inalterada y el futuro tecnológico. Relájate en un onsen tradicional con vistas al Monte Fuji, duerme en un ryokan histórico, y viaja en tren bala con conectividad y soporte continuo. Un itinerario que expandirá tus horizontes y cambiará tu forma de ver el mundo.",
         "includes": [
           "Vuelos redondo internacional",
           "Japan Rail Pass de 7 días",
@@ -82,82 +82,82 @@
     ]
   },
   "authority": {
-    "title_part1": "¿Por qué elegir",
-    "subtitle": "Nuestra promesa es convertir tu viaje soñado en una realidad sin estrés, con respaldo humano y profesional 24/7.",
+    "title_part1": "¿Por qué elegir a",
+    "subtitle": "Tu viaje soñado no tiene que ser una fuente de estrés. Somos el guía experto que te acompaña antes, durante y después de tu aventura, blindando tu experiencia contra cualquier riesgo.",
     "stats": [
       {
         "number": "15+",
-        "title": "Años de Experiencia",
-        "description": "Llevando sueños y aventuras alrededor del globo."
+        "title": "Rutas Probadas",
+        "description": "Llevamos más de 15 años diseñando caminos seguros. Conocemos cada rincón para evitarte sorpresas y asegurar que tu aventura sea perfecta."
       },
       {
         "number": "10K+",
-        "title": "Viajeros Felices",
-        "description": "Garantía de satisfacción y sonrisas en cada vuelo."
+        "title": "Historias con Final Feliz",
+        "description": "Más de 10,000 viajeros han transformado sus vidas, regresando a casa con el equipaje lleno de recuerdos y el corazón en paz."
       },
       {
         "number": "24/7",
-        "title": "Atención Continua",
-        "description": "Soporte ininterrumpido en cada paso de tu aventura."
+        "title": "Escudo Protector 24/7",
+        "description": "Nunca estarás solo en lo desconocido. Soporte humano en tiempo real que vigila tu viaje y resuelve cualquier imprevisto en minutos."
       },
       {
         "number": "IATA",
-        "title": "Agencia Certificada",
-        "description": "Cumplimos con estrictos estándares internacionales de turismo."
+        "title": "Seguridad Certificada",
+        "description": "Acreditados por IATA. Cumplimos con los más altos estándares mundiales para que tu inversión y tus sueños estén siempre protegidos."
       }
     ]
   },
   "testimonials": {
     "title_part1": "Viajeros con",
     "title_part2": "Historias",
-    "subtitle": "La sonrisa de nuestros clientes al volver a casa es nuestra mayor recompensa.",
+    "subtitle": "La sonrisa y paz mental de quienes ya recorrieron su camino con nosotros.",
     "list": [
       {
         "name": "María Fernández",
         "destination": "Viajó a París",
-        "quote": "Increíble servicio. No tuve que preocuparme por nada, Big Planners organizó todo al detalle y mi luna de miel fue perfecta. El hotel que eligieron fue mágico."
+        "quote": "Siempre soñé con París, pero temía perderme en los detalles de la planeación. Big Planners organizó todo a la perfección; mi única tarea fue caminar junto al Sena y <strong>sentir una paz mental absoluta, sabiendo que cada detalle estaba resuelto</strong>."
       },
       {
         "name": "Carlos Mendoza",
         "destination": "Viajó a Tokio",
-        "quote": "Siempre quise ir a Japón pero armar el viaje se sentía abrumador. Con ellos fue súper sencillo. Los traslados y guías locales fueron de primer nivel. ¡Totalmente recomendados!"
+        "quote": "Ir a Japón me aterraba por la barrera del idioma y el choque cultural. Gracias a la guía experta de Big Planners, me sentí seguro en cada paso. Volví a casa siendo <strong>una persona diferente, con una confianza renovada tras explorar lo desconocido sin miedo</strong>."
       },
       {
         "name": "Familia Salazar",
         "destination": "Viajó a Cancún",
-        "quote": "Un viaje en familia inolvidable. Lograron encontrar el balance perfecto entre descanso y actividades para los niños. El precio excelente por todo lo incluido."
+        "quote": "Buscábamos desconectarnos del caos de la ciudad y reconectar como familia. Big Planners creó un itinerario balanceado donde los niños exploraron y nosotros descansamos, logrando <strong>una recarga emocional profunda y recuerdos que nos unirán para siempre</strong>."
       }
     ]
   },
   "faq": {
     "title_part1": "Preguntas",
     "title_part2": "Frecuentes",
-    "subtitle": "Resolvemos tus dudas principales para que solo te preocupes por empacar.",
+    "subtitle": "Damos respuesta a tus temores y objeciones antes del viaje para brindarte absoluta tranquilidad.",
     "list": [
       {
-        "question": "¿Qué incluye cada paquete de viaje?",
-        "answer": "La mayoría de nuestros paquetes incluyen vuelos redondos, alojamiento, traslados aeropuerto-hotel, y asistencia 24/7. Sin embargo, los detalles específicos pueden variar y siempre se adaptan a tus necesidades y presupuesto."
+        "question": "¿Qué pasa si surge un imprevisto en el extranjero y no hablo el idioma?",
+        "answer": "No te preocupes. Con nuestro servicio de asistencia 24/7 vía WhatsApp, tienes a un guía experto en tu bolsillo. Si hay cancelaciones, emergencias médicas o dudas con el idioma, nos encargamos de solucionarlo por ti de inmediato."
       },
       {
-        "question": "¿Ofrecen opciones para personalizar mi viaje?",
-        "answer": "¡Definitivamente! En Big Planners somos expertos en viajes a la medida. Si tienes un destino o actividad específica en mente, nuestros asesores se encargarán de diseñar el itinerario perfecto exclusivo para ti."
+        "question": "Quiero un viaje único, ¿tengo que adaptarme a un itinerario rígido?",
+        "answer": "Para nada. Tu viaje debe ser tan único como tu historia. Tomamos nuestros paquetes base como inspiración y los adaptamos completamente a tus gustos, ritmo y presupuesto. Tú decides el rumbo, nosotros construimos el camino seguro."
       },
       {
-        "question": "¿Qué métodos de pago aceptan?",
-        "answer": "Aceptamos todas las tarjetas de crédito y débito, transferencias bancarias y depósitos en efectivo. También contamos con opciones de meses sin intereses con tarjetas participantes en paquetes seleccionados."
+        "question": "Me preocupa el tema de pagos y la seguridad de mi dinero",
+        "answer": "Tu paz mental es nuestra prioridad. Ofrecemos pasarelas de pago seguras y encriptadas, facilidades de meses sin intereses con tarjetas participantes, y contratos transparentes respaldados por certificaciones internacionales como IATA."
       },
       {
-        "question": "¿Qué sucede si necesito cancelar o modificar mi viaje?",
-        "answer": "Las políticas de cancelación varían según la aerolínea y el hotel seleccionado. Nuestro equipo siempre te informará sobre las políticas antes de concretar tu reserva para que tengas total tranquilidad, y te asistiremos en caso de requerir algún cambio."
+        "question": "¿Qué garantías tengo si mis planes cambian de último momento?",
+        "answer": "Sabemos que la vida es impredecible. Por eso, te asesoramos antes de reservar sobre las políticas de cancelación más flexibles de aerolíneas y hoteles, y te ayudamos a gestionar reprogramaciones minimizando costos para proteger tu inversión."
       },
       {
-        "question": "¿Brindan asistencia durante el viaje?",
-        "answer": "Sí, todos nuestros viajeros cuentan con atención continua 24/7 a través de nuestro canal exclusivo de WhatsApp. Si surge algún imprevisto durante tu viaje, estaremos listos para apoyarte de inmediato."
+        "question": "¿Realmente vale la pena contratar una agencia en lugar de reservar por mi cuenta?",
+        "answer": "Reservar por tu cuenta te expone a cargos ocultos, estafas en línea y horas de frustración resolviendo problemas. Con Big Planners, pagas por tranquilidad: tarifas negociadas, rutas optimizadas y el respaldo de un guía experto que responde por ti en todo momento."
       }
     ]
   },
   "footer": {
-    "description": "Ofrecemos todo tipo de paquetes para familias, bodas, despedidas de solter@s, destinos nacionales e internacionales, viajes de graduación, viajes de incentivos y mucho mas...",
+    "description": "El guía experto que transforma tus viajes en historias inolvidables. Diseñamos aventuras a la medida con soporte y seguridad 24/7.",
     "nav_title": "Navegación",
     "nav_packages": "Paquetes Destacados",
     "nav_about": "¿Por qué Nosotros?",
@@ -170,6 +170,6 @@
   },
   "whatsapp": {
     "tooltip": "¡Escríbenos!",
-    "msg": "Hola Big Planners, vengo de su sitio web y me gustaría recibir información."
+    "msg": "Hola Big Planners, quiero empezar a planear mi próxima gran aventura."
   }
 }

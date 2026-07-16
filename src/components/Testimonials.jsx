@@ -47,9 +47,10 @@ const Testimonials = () => {
 
               <div className="flex mb-4">{renderStars(test.rating)}</div>
 
-              <blockquote className="font-body text-gray-700 italic mb-6 relative z-10">
-                "{test.quote}"
-              </blockquote>
+              <blockquote
+                className="font-body text-gray-700 italic mb-6 relative z-10"
+                dangerouslySetInnerHTML={{ __html: `"${test.quote}"` }}
+              />
 
               <div className="flex items-center gap-4 border-t border-gray-100 pt-4">
                 <div className="w-12 h-12 bg-m3-primary-container rounded-full flex items-center justify-center text-m3-primary font-heading font-bold text-lg uppercase shadow-m3-sm">

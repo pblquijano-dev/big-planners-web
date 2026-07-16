@@ -6,7 +6,7 @@ const PackageCard = ({ data, onOpenModal }) => {
 
   return (
     <div
-      className="bg-white rounded-m3 shadow-m3-sm hover:shadow-m3-md transition-all duration-300 overflow-hidden cursor-pointer group flex flex-col h-full"
+      className="bg-white rounded-lg shadow-m3-sm hover:shadow-m3-md transition-all duration-300 overflow-hidden cursor-pointer group flex flex-col h-full border border-m3-outline/10"
       onClick={() => onOpenModal(data)}
     >
       {/* Image container with zoom effect on hover */}
@@ -17,7 +17,7 @@ const PackageCard = ({ data, onOpenModal }) => {
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         {/* Price Badge */}
-        <div className="absolute top-4 right-4 bg-m3-surface text-m3-primary font-heading font-bold px-4 py-1.5 rounded-full shadow-sm">
+        <div className="absolute top-4 right-4 bg-m3-surface text-m3-primary font-heading font-bold px-4 py-1.5 rounded-full shadow-sm border border-m3-outline/20">
           {data.price}
         </div>
       </div>
@@ -47,7 +47,7 @@ const PackageCard = ({ data, onOpenModal }) => {
           {data.shortDescription}
         </p>
 
-        <button className="mt-auto w-full py-3 rounded-full border border-m3-outline text-m3-primary font-body font-medium hover:bg-m3-primary-container hover:border-transparent transition-colors">
+        <button className="mt-auto w-full py-3 rounded-lg border border-m3-outline text-m3-primary font-body font-medium hover:bg-m3-primary-container/10 active:bg-m3-primary-container/20 transition-colors">
           {t('packages.card_see_details')}
         </button>
       </div>

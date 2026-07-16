@@ -1,13 +1,17 @@
-import cancunImage from './assets/images/cancun.jpg';
-import beachImage from './assets/images/beach.jpg';
-import colombiaImage from './assets/images/colombia.jpg';
-import hotelImage from './assets/images/hotel.jpg';
+import beachImage from './assets/images/beach-green.jpg';
+import colombiaImage from './assets/images/forest-colombia.jpg';
+import hotelImage from './assets/images/hotel-pool.jpg';
+import milan from './assets/images/milan.jpg';
+import caribe from './assets/images/riviera-maya.jpg';
+import cenote from './assets/images/cenote-casa.jpg';
 
 export const BACKGROUNDS = [
-  { img: beachImage, alt: 'Beach', bgPosition: 'bg-center', overlay: 'bg-black/50' },
-  { img: hotelImage, alt: 'Hotel', bgPosition: 'bg-center', overlay: 'bg-black/60' },
+  { img: beachImage, alt: 'Beach', bgPosition: 'bg-center', overlay: 'bg-black/60' },
   { img: colombiaImage, alt: 'Colombia', bgPosition: 'bg-center', overlay: 'bg-black/60' },
-  { img: cancunImage, alt: 'Cancun', bgPosition: 'bg-bottom', overlay: 'bg-black/40' },
+  { img: milan, alt: 'Milan', bgPosition: 'bg-bottom', overlay: 'bg-black/60' },
+  { img: cenote, alt: 'Tulum', bgPosition: 'bg-bottom', overlay: 'bg-black/60' },
+  { img: hotelImage, alt: 'Hotel', bgPosition: 'bg-bottom', overlay: 'bg-black/70' },
+  { img: caribe, alt: 'Riviera Maya', bgPosition: 'bg-bottom', overlay: 'bg-black/60' },
 ];
 
 export const TIME_TO_CHANGE_BACKGROUND = 7000;

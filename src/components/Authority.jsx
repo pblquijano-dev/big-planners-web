@@ -113,9 +113,9 @@ const Authority = () => {
           {stats.map((stat) => (
             <div
               key={stat.id}
-              className="flex flex-col items-center text-center p-8 rounded-m3 hover:bg-m3-surface transition-colors duration-300"
+              className="flex flex-col items-center text-center p-8 rounded-lg hover:bg-m3-surface-container/50 border border-transparent hover:border-m3-outline/10 transition-all duration-300"
             >
-              <div className="bg-m3-primary-container p-4 rounded-full mb-6 text-m3-primary shadow-m3-sm">
+              <div className="bg-m3-primary-container/20 p-4 rounded-full mb-6 text-m3-primary shadow-m3-sm">
                 {stat.icon}
               </div>
               <h3 className="font-heading text-4xl font-bold text-m3-primary mb-2 tracking-tight">

@@ -31,7 +31,7 @@ const Packages = () => {
   };
 
   return (
-    <section id="paquetes" className="py-24 bg-m3-surface">
+    <section id="paquetes" className="py-24 bg-m3-surface-container-low">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="font-heading text-4xl font-bold text-gray-900 mb-4">

@@ -32,11 +32,11 @@ const App = () => {
       <main className="flex-grow">
         <Hero isScrolled={isScrolled} />
 
+        <Testimonials />
+
         <Packages />
 
         <Authority />
-
-        <Testimonials />
 
         <hr className="border-m3-outline w-[40%] mx-auto opacity-30" />
 

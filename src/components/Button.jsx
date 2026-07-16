@@ -25,19 +25,21 @@ const Button = forwardRef(
     // Base classes strict to MD3 button specs:
     // fully rounded, Label Large tracking/weight
     const baseClasses =
-      'relative inline-flex items-center justify-center box-border rounded-full font-medium tracking-[0.1px] transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 overflow-hidden select-none';
+      'relative inline-flex items-center justify-center box-border rounded-lg font-medium tracking-[0.1px] transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 overflow-hidden select-none';
 
     // Using custom M3 colors defined in tailwind.config.cjs
     const variantClasses = {
       filled:
-        'bg-m3-primary text-white hover:bg-[#8A0027] hover:shadow-m3-sm active:bg-[#720020] active:shadow-none focus-visible:ring-m3-primary',
+        'bg-m3-primary text-white hover:bg-m3-primary/90 hover:shadow-m3-sm active:bg-m3-primary/80 active:shadow-none focus-visible:ring-m3-primary',
       outlined:
         'border border-m3-outline text-m3-primary bg-transparent hover:bg-m3-primary/10 hover:border-m3-primary active:bg-m3-primary/20 focus-visible:ring-m3-primary',
       text: 'bg-transparent text-m3-primary hover:bg-m3-primary/10 active:bg-m3-primary/20 focus-visible:ring-m3-primary',
       elevated:
-        'bg-m3-surface text-m3-primary shadow-m3-sm hover:shadow-m3-md hover:bg-white active:bg-m3-surface/80 active:shadow-m3-sm focus-visible:ring-m3-primary',
+        'bg-m3-surface text-m3-primary shadow-m3-sm hover:shadow-m3-md hover:bg-m3-surface-container active:bg-m3-surface-container-high active:shadow-m3-sm focus-visible:ring-m3-primary',
       tonal:
-        'bg-m3-primary-container text-[#3A000D] hover:bg-m3-primary-container/80 hover:shadow-m3-sm active:bg-m3-primary-container/60 active:shadow-none focus-visible:ring-m3-primary',
+        'bg-m3-primary-container text-m3-on-primary-container hover:bg-m3-primary-container/90 hover:shadow-m3-sm active:bg-m3-primary-container/80 active:shadow-none focus-visible:ring-m3-primary',
+      tertiary:
+        'bg-m3-tertiary text-white hover:bg-m3-tertiary/90 hover:shadow-m3-sm active:bg-m3-tertiary/80 active:shadow-none focus-visible:ring-m3-tertiary',
     };
 
     // Disabled states exactly as MD3 (12% opacity bg, 38% opacity text relative to on-surface)
@@ -47,6 +49,7 @@ const Button = forwardRef(
       text: 'bg-transparent text-gray-500/38 cursor-not-allowed',
       elevated: 'bg-gray-500/12 text-gray-500/38 shadow-none cursor-not-allowed',
       tonal: 'bg-gray-500/12 text-gray-500/38 cursor-not-allowed',
+      tertiary: 'bg-gray-500/12 text-gray-500/38 cursor-not-allowed',
     };
 
     // Setup sizes according to MD3 proportions
@@ -143,7 +146,7 @@ const Button = forwardRef(
 Button.displayName = 'Button';
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(['filled', 'outlined', 'text', 'elevated', 'tonal']),
+  variant: PropTypes.oneOf(['filled', 'outlined', 'text', 'elevated', 'tonal', 'tertiary']),
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   children: PropTypes.node,
   icon: PropTypes.node,

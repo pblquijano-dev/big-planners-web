@@ -1,4 +1,4 @@
-import logo from '../assets/images/BigPlanners.jpg';
+import logo from '../assets/images/big-planners.png';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../utils';
 
@@ -7,32 +7,75 @@ const Navbar = ({ isScrolled }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 border-b-2 md:border-b-4 border-m3-primary rounded-br-0 md:rounded-br-3xl transition-all duration-300 ${
-        isScrolled ? 'bg-m3-primaryDark shadow-m3-lg py-4' : 'bg-transparent border-none py-6'
+      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent ${
+        isScrolled
+          ? 'bg-m3-surface/85 backdrop-blur-[12px] shadow-m3-md py-4 border-b border-m3-outline/10'
+          : 'bg-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center relative">
+      <div
+        className={cn(
+          'container mx-auto px-6 flex justify-between items-center relative',
+          !isScrolled && 'md:flex-col gap-2'
+        )}
+      >
         {/* Logo */}
-        <div className="w-[164px]" />
         <img
           src={logo}
-          className={`absolute rounded-full border-2 md:border-4 border-m3-primary z-50 transition-all duration-300 shadow-m3-xl top-[-8px] left-1/2 translate-x-[-50%] h-[80px] w-[80px] md:left-0 md:translate-x-0 md:h-[120px] md:w-[120px] ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
+          className={cn(isScrolled ? 'h-[48px] lg:h-[64px]' : 'h-[48px] md:h-[64px] md:mt-2')}
+          style={
+            isScrolled
+              ? {
+                  filter:
+                    'brightness(0) saturate(100%) invert(38%) sepia(21%) saturate(543%) hue-rotate(145deg) brightness(91%) contrast(85%)',
+                }
+              : { filter: 'invert(100%)' }
+          }
           alt="Logo"
         />
 
-        <div className="flex items-center gap-4 md:gap-8 z-50">
+        <div className="flex items-center gap-4 lg:gap-8 z-50">
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8 font-body font-medium text-white">
-            <a href="#paquetes" className="hover:text-m3-primary-container transition-colors">
+          <div
+            className={cn(
+              'hidden md:flex items-center gap-4 lg:gap-8 font-body font-medium transition-colors duration-300',
+              isScrolled ? 'text-m3-on-surface' : 'text-white'
+            )}
+          >
+            <a
+              href="#paquetes"
+              className={cn(
+                'transition-colors',
+                isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
+              )}
+            >
               {t('navbar.packages')}
             </a>
-            <a href="#nosotros" className="hover:text-m3-primary-container transition-colors">
+            <a
+              href="#nosotros"
+              className={cn(
+                'transition-colors',
+                isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
+              )}
+            >
               {t('navbar.about')}
             </a>
-            <a href="#testimonios" className="hover:text-m3-primary-container transition-colors">
+            <a
+              href="#testimonios"
+              className={cn(
+                'transition-colors',
+                isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
+              )}
+            >
               {t('navbar.testimonials')}
             </a>
-            <a href="#faq" className="hover:text-m3-primary-container transition-colors">
+            <a
+              href="#faq"
+              className={cn(
+                'transition-colors',
+                isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
+              )}
+            >
               {t('navbar.faq')}
             </a>
           </div>
@@ -40,27 +83,29 @@ const Navbar = ({ isScrolled }) => {
           {/* Language Switcher */}
           <div
             className={cn(
-              'flex gap-2 text-sm font-bold font-heading px-2 rounded-full border-2 border-m3-primary',
-              isScrolled ? 'bg-m3-surface text-m3-primary' : 'bg-m3-primary text-m3-surface'
+              'flex gap-2 text-sm font-bold font-heading px-3 py-1 rounded-full border transition-all duration-300',
+              isScrolled
+                ? 'bg-m3-primary-container/20 text-m3-primary border-m3-primary/30'
+                : 'bg-transparent text-white border-white/40'
             )}
           >
             <button
               onClick={() => i18n.changeLanguage('es')}
-              className={`transition-colors ${i18n.resolvedLanguage?.startsWith('es') ? 'opacity-100 drop-shadow-md' : 'opacity-60 hover:opacity-80'}`}
+              className={`transition-colors ${i18n.resolvedLanguage?.startsWith('es') ? 'opacity-100 font-extrabold' : 'opacity-50 hover:opacity-80'}`}
             >
               ES
             </button>
             <span
               className={cn(
-                'opacity-60 leading-snug',
-                isScrolled ? 'text-m3-primary' : 'text-m3-surface'
+                'opacity-30 leading-snug',
+                isScrolled ? 'text-m3-primary' : 'text-white'
               )}
             >
               |
             </span>
             <button
               onClick={() => i18n.changeLanguage('en')}
-              className={`transition-colors ${i18n.resolvedLanguage?.startsWith('en') ? 'opacity-100 drop-shadow-md' : 'opacity-60 hover:opacity-80'}`}
+              className={`transition-colors ${i18n.resolvedLanguage?.startsWith('en') ? 'opacity-100 font-extrabold' : 'opacity-50 hover:opacity-80'}`}
             >
               EN
             </button>
@@ -68,7 +113,7 @@ const Navbar = ({ isScrolled }) => {
 
           {/* Mobile menu button (Simplified for now) */}
           <div className="md:hidden flex items-center">
-            <button className="text-white">
+            <button className={isScrolled ? 'text-m3-on-surface' : 'text-white'}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"

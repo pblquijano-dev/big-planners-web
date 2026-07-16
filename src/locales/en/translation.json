@@ -6,10 +6,10 @@
     "testimonials": "Testimonials"
   },
   "hero": {
-    "title_part1": "Your next vacation",
-    "title_part2": "starts here",
-    "subtitle": "Unforgettable experiences, exotic destinations, and the best service for your ideal trip.",
-    "cta": "Explore Destinations"
+    "title_part1": "You don't travel to escape,",
+    "title_part2": "you travel to find yourself",
+    "subtitle": "We design custom adventures that transform your perspective and reconnect you with what truly matters. Choose your setting and start writing your story.",
+    "cta": "Choose your next adventure"
   },
   "packages": {
     "title_part1": "Featured",
@@ -26,8 +26,8 @@
         "title": "Paradise in Cancun",
         "duration": "6 Days / 5 Nights",
         "price": "$899 USD",
-        "shortDescription": "Enjoy beautiful white sand beaches, crystal clear turquoise waters, and the most vibrant nightlife in the Mexican Caribbean.",
-        "description": "Cancun is much more than a beach destination. This package offers an all-inclusive experience in one of the best resorts in the hotel zone. Relax facing the Caribbean Sea, enjoy international cuisine, or venture to nearby cenotes and Mayan ruins.",
+        "shortDescription": "Wake up to the sound of the Caribbean, sink your feet into white sand, and forget about the clock in an all-inclusive sanctuary.",
+        "description": "Cancun is the refuge where time stands still. This package offers a premium stay in an all-inclusive resort facing turquoise waves. Leave daily stress behind, enjoy exclusive gourmet dinners, and explore the mysticism of Mayan cenotes with private guides dedicated entirely to your relaxation.",
         "includes": [
           "Roundtrip flight",
           "5-star All-Inclusive Hotel",
@@ -38,10 +38,10 @@
       },
       {
         "title": "Classic Europe",
-        "duration": "15 Days / 14 Nights",
+        "duration": "15 Days / 14 Noches",
         "price": "$2,450 USD",
-        "shortDescription": "A magical journey through the most emblematic capitals: Paris, Rome, Venice, Madrid, and London.",
-        "description": "The trip everyone should take at least once in their life. Stroll down the Champs-Elysees in Paris, sail on the gondolas of Venice, and marvel at the Colosseum in Rome. Everything in a perfectly orchestrated tour so you only worry about enjoying.",
+        "shortDescription": "Walk the illuminated avenues of Paris, navigate the canals of Venice, and step through Roman history with everything perfectly planned.",
+        "description": "A journey of self-discovery through the cradle of art and history. Forget endless lines and confusing transfers; travel on high-speed trains and rest in boutique hotels selected for their warmth and location. An experience designed so your only concern is to be inspired.",
         "includes": [
           "Intercontinental flights",
           "High-speed TGV/Eurostar trains",
@@ -55,8 +55,8 @@
         "title": "Adventure in Machu Picchu",
         "duration": "7 Days / 6 Nights",
         "price": "$1,200 USD",
-        "shortDescription": "Connect with history on an unforgettable expedition through Cuzco, the Sacred Valley, and the majestic Inca citadel.",
-        "description": "Experience the magic of the Peruvian Andes. This cultural and adventure tour will take you from the historic capital, Cuzco, through the colorful Sacred Valley of the Incas, culminating with the impressive sunrise at Machu Picchu. Includes panoramic train ride.",
+        "shortDescription": "Feel the ancient energy of the Andes at sunrise in front of the sacred citadel and reconnect with nature.",
+        "description": "Exceed your own limits on a magical journey through Cusco and the Sacred Valley. You will travel on a panoramic train connecting you with the Andean landscape before witnessing the majesty of Machu Picchu. A transforming adventure backed by local experts to ensure your safety on every trail.",
         "includes": [
           "Flight from Lima to Cuzco",
           "Accommodation in boutique hotels",
@@ -67,10 +67,10 @@
       },
       {
         "title": "Essence of Japan",
-        "duration": "12 Days / 11 Nights",
+        "duration": "12 Days / 11 Noches",
         "price": "$3,100 USD",
-        "shortDescription": "Discover the fascinating contrast between Tokyo's futuristic technology and Kyoto's ancestral traditions.",
-        "description": "A trip that awakens all the senses. Experience the hustle and bustle of Shinjuku in Tokyo, relax in traditional hot springs (onsen) overlooking Mount Fuji, and stroll under cherry blossoms or autumn leaves in the historic temples of Kyoto and Nara.",
+        "shortDescription": "Walk beneath Kyoto's ancient temples and immerse yourself in Mount Fuji's mysticism before Tokyo's futuristic tomorrow.",
+        "description": "The perfect clash between unaltered tradition and the technological future. Relax in a traditional onsen overlooking Mount Fuji, sleep in a historic ryokan, and travel by bullet train with continuous support and connectivity. An itinerary that will expand your horizons and change how you see the world.",
         "includes": [
           "Roundtrip international flights",
           "7-day Japan Rail Pass",
@@ -83,81 +83,81 @@
   },
   "authority": {
     "title_part1": "Why choose",
-    "subtitle": "Our promise is to turn your dream trip into a stress-free reality, with human and professional support 24/7.",
+    "subtitle": "Your dream trip shouldn't be a source of stress. We are the expert guide who accompanies you before, during, and after your adventure, shielding your experience from any risks.",
     "stats": [
       {
         "number": "15+",
-        "title": "Years of Experience",
-        "description": "Bringing dreams and adventures around the globe."
+        "title": "Proven Routes",
+        "description": "We have spent over 15 years designing proven and safe routes. We know every corner to prevent surprises and ensure your adventure is perfect."
       },
       {
         "number": "10K+",
-        "title": "Happy Travelers",
-        "description": "Satisfaction guarantee and smiles on every flight."
+        "title": "Stories with Happy Ending",
+        "description": "More than 10,000 travelers have transformed their lives, returning home with luggage full of memories and peaceful hearts."
       },
       {
         "number": "24/7",
-        "title": "Continuous Support",
-        "description": "Uninterrupted support every step of your adventure."
+        "title": "24/7 Protective Shield",
+        "description": "You will never be alone in the unknown. Real-time human support that watches over your trip and resolves any unforeseen event in minutes."
       },
       {
         "number": "IATA",
-        "title": "Certified Agency",
-        "description": "We comply with strict international tourism standards."
+        "title": "Certified Security",
+        "description": "Accredited by IATA. We comply with the highest global standards so that your investment and dreams are always protected."
       }
     ]
   },
   "testimonials": {
     "title_part1": "Travelers with",
     "title_part2": "Stories",
-    "subtitle": "The smile of our customers when returning home is our greatest reward.",
+    "subtitle": "The smile and peace of mind of those who have already walked their path with us.",
     "list": [
       {
         "name": "Maria Fernandez",
         "destination": "Traveled to Paris",
-        "quote": "Incredible service. I didn't have to worry about anything, Big Planners organized everything in detail and my honeymoon was perfect. The hotel they chose was magical."
+        "quote": "Always dreamed of Paris, but feared getting lost in the details of planning. Big Planners organized everything perfectly; my only job was to walk along the Seine and <strong>feel absolute peace of mind, knowing that every detail was taken care of</strong>."
       },
       {
         "name": "Carlos Mendoza",
         "destination": "Traveled to Tokyo",
-        "quote": "I always wanted to go to Japan but putting the trip together felt overwhelming. With them it was super simple. The transfers and local guides were top notch. Fully recommended!"
+        "quote": "Going to Japan terrified me because of the language barrier and cultural shock. Thanks to Big Planners' expert guidance, I felt safe at every step. I returned home as <strong>a different person, with renewed confidence after exploring the unknown without fear</strong>."
       },
       {
         "name": "Salazar Family",
         "destination": "Traveled to Cancun",
-        "quote": "An unforgettable family trip. They managed to find the perfect balance between rest and activities for the kids. Excellent price for everything included."
+        "quote": "We were looking to disconnect from city chaos and reconnect as a family. Big Planners created a balanced itinerary where the children explored and we rested, achieving <strong>a deep emotional recharge and memories that will unite us forever</strong>."
       }
     ]
   },
   "faq": {
     "title_part1": "Frequently Asked",
     "title_part2": "Questions",
-    "subtitle": "We solve your main doubts so you only worry about packing.",
+    "subtitle": "We provide answers to your fears and objections before the journey to bring you absolute peace of mind.",
     "list": [
       {
-        "question": "What does each travel package include?",
-        "answer": "Most of our packages include round-trip flights, accommodation, airport-hotel transfers, and 24/7 assistance. However, specific details may vary and are always adapted to your needs and budget."
+        "question": "What if an emergency happens abroad and I don't speak the language?",
+        "answer": "Don't worry. With our 24/7 support via WhatsApp, you have an expert guide right in your pocket. If there are cancellations, medical emergencies, or language barriers, we take care of solving it for you immediately."
       },
       {
-        "question": "Do you offer options to customize my trip?",
-        "answer": "Definitely! At Big Planners we are experts in tailor-made trips. If you have a specific destination or activity in mind, our advisors will design the perfect itinerary exclusively for you."
+        "question": "I want a unique trip, do I have to adapt to a rigid itinerary?",
+        "answer": "Not at all. Your trip should be as unique as your story. We use our base packages as inspiration and tailor them completely to your tastes, pace, and budget. You decide the direction, we build the safe path."
       },
       {
-        "question": "What payment methods do you accept?",
-        "answer": "We accept all credit and debit cards, bank transfers, and cash reserves. We also have options for months without interest with participating cards in selected packages."
+        "question": "I'm worried about payments and the security of my money",
+        "answer": "Your peace of mind is our priority. We offer secure, encrypted payment gateways, interest-free monthly payment options with participating cards, and transparent contracts backed by international certifications like IATA."
       },
       {
-        "question": "What happens if I need to cancel or modify my trip?",
-        "answer": "Cancellation policies vary by airline and hotel selected. Our team will always inform you about the policies before finalizing your reservation so you have complete peace of mind, and we will assist you if any changes are required."
+        "question": "What guarantees do I have if my plans change at the last minute?",
+        "answer": "We know that life is unpredictable. That is why, before you book, we advise you on the most flexible cancellation policies from airlines and hotels, and help you manage rescheduling while minimizing costs to protect your investment."
       },
       {
-        "question": "Do you provide assistance during the trip?",
-        "answer": "Yes, all our travelers have continuous 24/7 attention through our exclusive WhatsApp channel. If any unforeseen event arises during your trip, we will be ready to support you immediately."
+        "question": "Is it really worth hiring an agency instead of booking on my own?",
+        "answer": "Booking on your own exposes you to hidden fees, online scams, and hours of frustration resolving problems. With Big Planners, you pay for peace of mind: negotiated rates, optimized routes, and the backup of an expert guide who stands by you at all times."
       }
     ]
   },
   "footer": {
-    "description": "We offer all types of packages for families, weddings, bachelor/bachelorette parties, national and international destinations, graduation trips, incentive trips and much more...",
+    "description": "The expert guide that transforms your travels into unforgettable stories. We design custom adventures with 24/7 support and security.",
     "nav_title": "Navigation",
     "nav_packages": "Featured Packages",
     "nav_about": "Why Us?",
@@ -170,6 +170,6 @@
   },
   "whatsapp": {
     "tooltip": "Message us!",
-    "msg": "Hello Big Planners, I am coming from your website and I would like to receive information."
+    "msg": "Hello Big Planners, I want to start planning my next big adventure."
   }
 }

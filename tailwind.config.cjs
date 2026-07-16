@@ -4,19 +4,37 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Material Design 3 Custom Tokens
+        // Material Design 3 Custom Tokens - Coastal Nomad
         m3: {
-          primary: '#A3002E',
-          primaryDark: '#850026',
-          'primary-container': '#FFDAD9',
-          secondary: '#D58936',
-          surface: '#FFF8F7',
-          outline: '#857372',
+          primary: '#45636c',
+          primaryDark: '#214048',
+          'primary-container': '#8cabb5',
+          'on-primary-container': '#214048',
+          secondary: '#42636d',
+          'on-secondary': '#ffffff',
+          'secondary-container': '#c5e8f4',
+          'on-secondary-container': '#486973',
+          tertiary: '#9b442d',
+          'on-tertiary': '#ffffff',
+          'tertiary-container': '#f4896d',
+          'on-tertiary-container': '#6d230e',
+          surface: '#fff8f5',
+          'surface-dim': '#efd5c5',
+          'surface-container': '#ffeadd',
+          'surface-container-low': '#fff1e9',
+          'surface-container-high': '#fee3d2',
+          'surface-container-highest': '#f8decd',
+          'on-surface': '#26190f',
+          'on-surface-variant': '#41484a',
+          outline: '#72787a',
+          'outline-variant': '#c1c7ca',
+          background: '#fff8f5',
+          'on-background': '#26190f',
         },
       },
       fontFamily: {
-        heading: ['Montserrat', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'sans-serif'],
+        body: ['Plus Jakarta Sans', 'sans-serif'],
       },
       borderRadius: {
         m3: '24px',
