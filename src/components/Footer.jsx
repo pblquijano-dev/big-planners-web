@@ -52,17 +52,17 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 font-body text-gray-400">
               <li>
-                <a href="#paquetes" className="hover:text-m3-primary transition-colors">
+                <a href="#packages" className="hover:text-m3-primary transition-colors">
                   {t('footer.nav_packages')}
                 </a>
               </li>
               <li>
-                <a href="#nosotros" className="hover:text-m3-primary transition-colors">
+                <a href="#about" className="hover:text-m3-primary transition-colors">
                   {t('footer.nav_about')}
                 </a>
               </li>
               <li>
-                <a href="#testimonios" className="hover:text-m3-primary transition-colors">
+                <a href="#testimonials" className="hover:text-m3-primary transition-colors">
                   {t('footer.nav_testimonials')}
                 </a>
               </li>

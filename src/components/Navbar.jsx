@@ -45,7 +45,16 @@ const Navbar = ({ isScrolled }) => {
             )}
           >
             <a
-              href="#paquetes"
+              href="#testimonials"
+              className={cn(
+                'transition-colors',
+                isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
+              )}
+            >
+              {t('navbar.testimonials')}
+            </a>
+            <a
+              href="#packages"
               className={cn(
                 'transition-colors',
                 isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
@@ -54,22 +63,13 @@ const Navbar = ({ isScrolled }) => {
               {t('navbar.packages')}
             </a>
             <a
-              href="#nosotros"
+              href="#about"
               className={cn(
                 'transition-colors',
                 isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
               )}
             >
               {t('navbar.about')}
-            </a>
-            <a
-              href="#testimonios"
-              className={cn(
-                'transition-colors',
-                isScrolled ? 'hover:text-m3-primary' : 'hover:text-m3-primary-container'
-              )}
-            >
-              {t('navbar.testimonials')}
             </a>
             <a
               href="#faq"
@@ -159,25 +159,25 @@ const Navbar = ({ isScrolled }) => {
       >
         <div className="flex flex-col gap-4 font-body font-medium text-lg text-m3-on-surface">
           <a
-            href="#paquetes"
+            href="#testimonials"
+            className="hover:text-m3-primary py-2 transition-colors border-b border-m3-outline/5 text-center"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t('navbar.testimonials')}
+          </a>
+          <a
+            href="#packages"
             className="hover:text-m3-primary py-2 transition-colors border-b border-m3-outline/5 text-center"
             onClick={() => setIsMenuOpen(false)}
           >
             {t('navbar.packages')}
           </a>
           <a
-            href="#nosotros"
+            href="#about"
             className="hover:text-m3-primary py-2 transition-colors border-b border-m3-outline/5 text-center"
             onClick={() => setIsMenuOpen(false)}
           >
             {t('navbar.about')}
-          </a>
-          <a
-            href="#testimonios"
-            className="hover:text-m3-primary py-2 transition-colors border-b border-m3-outline/5 text-center"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t('navbar.testimonials')}
           </a>
           <a
             href="#faq"

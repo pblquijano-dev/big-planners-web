@@ -22,7 +22,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonios" className="py-24 bg-m3-surface relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-m3-surface relative overflow-hidden">
       {/* Decorative background circle */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-m3-primary-container rounded-full opacity-30 mix-blend-multiply blur-3xl"></div>
 

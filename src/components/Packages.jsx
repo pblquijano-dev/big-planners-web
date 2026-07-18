@@ -32,7 +32,7 @@ const Packages = () => {
   };
 
   return (
-    <section id="paquetes" className="py-24 bg-m3-surface-container-low">
+    <section id="packages" className="py-24 bg-m3-surface-container-low">
       <div className="container mx-auto px-6">
         <ScrollReveal animation="fade-up">
           <div className="text-center mb-16 max-w-2xl mx-auto">

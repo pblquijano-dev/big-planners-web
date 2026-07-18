@@ -101,7 +101,7 @@ const Authority = () => {
   ];
 
   return (
-    <section id="nosotros" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <ScrollReveal animation="fade-up">
           <div className="text-center mb-16 max-w-2xl mx-auto">

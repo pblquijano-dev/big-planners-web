@@ -82,7 +82,7 @@ const Hero = ({ isScrolled }) => {
             className="transition-all duration-300 shadow-m3-lg hover:shadow-m3-xl transform hover:-translate-y-1"
             size="large"
             onClick={() => {
-              const el = document.getElementById('paquetes');
+              const el = document.getElementById('packages');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }}
           >
