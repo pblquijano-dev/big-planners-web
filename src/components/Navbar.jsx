@@ -24,7 +24,10 @@ const Navbar = ({ isScrolled }) => {
         {/* Logo */}
         <img
           src={logo}
-          className={cn(isScrolled ? 'h-[48px] lg:h-[64px]' : 'h-[48px] md:h-[64px] md:mt-2')}
+          className={cn(
+            isScrolled ? 'h-[48px] lg:h-[64px]' : 'h-[48px] md:h-[64px] md:mt-2',
+            'cursor-pointer transition-transform hover:scale-105 duration-200'
+          )}
           style={
             isScrolled
               ? {
@@ -33,6 +36,10 @@ const Navbar = ({ isScrolled }) => {
                 }
               : { filter: 'invert(100%)' }
           }
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setIsMenuOpen(false);
+          }}
           alt="Logo"
         />
 
