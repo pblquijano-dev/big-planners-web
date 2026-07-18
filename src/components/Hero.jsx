@@ -8,10 +8,14 @@ import ScrollReveal from './ScrollReveal.jsx';
 const Hero = ({ isScrolled }) => {
   const { t } = useTranslation();
   const [currentBg, setCurrentBg] = useState(0);
+  const [prevBg, setPrevBg] = useState(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBg((prevBg) => (prevBg + 1) % BACKGROUNDS.length);
+      setCurrentBg((prevBgIndex) => {
+        setPrevBg(prevBgIndex);
+        return (prevBgIndex + 1) % BACKGROUNDS.length;
+      });
     }, TIME_TO_CHANGE_BACKGROUND);
     return () => clearInterval(interval);
   }, []);
@@ -19,19 +23,40 @@ const Hero = ({ isScrolled }) => {
   return (
     <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Images for crossfade */}
-      {BACKGROUNDS.map((bg, index) => (
-        <div
-          key={index}
-          role="img"
-          aria-label={bg.alt}
-          className={cn(
-            'absolute inset-0 bg-cover bg-no-repeat transition-opacity duration-1000 ease-in-out',
-            bg.bgPosition,
-            index === currentBg ? 'opacity-100' : 'opacity-0'
-          )}
-          style={{ backgroundImage: `url(${bg.img})` }}
-        />
-      ))}
+      {BACKGROUNDS.map((bg, index) => {
+        let opacity = 0;
+        let transform = 'scale(1) translateY(0)';
+        let transition = 'opacity 1000ms ease-in-out';
+
+        if (index === currentBg) {
+          opacity = 1;
+          transform = 'scale(1.08) translateY(-10px)';
+          transition = 'opacity 1000ms ease-in-out, transform 9200ms linear';
+        } else if (index === prevBg) {
+          opacity = 0;
+          transform = 'scale(1.08) translateY(-10px)';
+          transition = 'opacity 1000ms ease-in-out, transform 9200ms linear'; // keep identical transform transition during fadeout
+        } else {
+          opacity = 0;
+          transform = 'scale(1) translateY(0)';
+          transition = 'none';
+        }
+
+        return (
+          <div
+            key={index}
+            role="img"
+            aria-label={bg.alt}
+            className={cn('absolute inset-0 bg-cover bg-no-repeat', bg.bgPosition)}
+            style={{
+              backgroundImage: `url(${bg.img})`,
+              opacity,
+              transform,
+              transition,
+            }}
+          />
+        );
+      })}
 
       {/* Dark overlay for text readability */}
       <div className={cn('absolute inset-0 z-0', BACKGROUNDS[currentBg].overlay)}></div>
