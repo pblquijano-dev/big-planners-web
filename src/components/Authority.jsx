@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import ScrollReveal from './ScrollReveal.jsx';
 
 const Authority = () => {
   const { t } = useTranslation();
@@ -102,30 +103,31 @@ const Authority = () => {
   return (
     <section id="nosotros" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="font-heading text-4xl font-bold text-gray-900 mb-4">
-            {t('authority.title_part1')} <span className="text-m3-primary">Big Planners</span>?
-          </h2>
-          <p className="font-body text-lg text-gray-600">{t('authority.subtitle')}</p>
-        </div>
+        <ScrollReveal animation="fade-up">
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <h2 className="font-heading text-4xl font-bold text-gray-900 mb-4">
+              {t('authority.title_part1')} <span className="text-m3-primary">Big Planners</span>?
+            </h2>
+            <p className="font-body text-lg text-gray-600">{t('authority.subtitle')}</p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {stats.map((stat) => (
-            <div
-              key={stat.id}
-              className="flex flex-col items-center text-center p-8 rounded-lg hover:bg-m3-surface-container/50 border border-transparent hover:border-m3-outline/10 transition-all duration-300"
-            >
-              <div className="bg-m3-primary-container/20 p-4 rounded-full mb-6 text-m3-primary shadow-m3-sm">
-                {stat.icon}
+          {stats.map((stat, index) => (
+            <ScrollReveal key={stat.id} animation="zoom-in" delay={index * 150} className="h-full">
+              <div className="flex flex-col items-center text-center p-8 rounded-lg hover:bg-m3-surface-container/50 border border-transparent hover:border-m3-outline/10 transition-all duration-300 h-full">
+                <div className="bg-m3-primary-container/20 p-4 rounded-full mb-6 text-m3-primary shadow-m3-sm">
+                  {stat.icon}
+                </div>
+                <h3 className="font-heading text-4xl font-bold text-m3-primary mb-2 tracking-tight">
+                  {stat.number}
+                </h3>
+                <h4 className="font-heading text-xl font-semibold text-gray-900 mb-3">
+                  {stat.title}
+                </h4>
+                <p className="font-body text-gray-600 leading-relaxed">{stat.description}</p>
               </div>
-              <h3 className="font-heading text-4xl font-bold text-m3-primary mb-2 tracking-tight">
-                {stat.number}
-              </h3>
-              <h4 className="font-heading text-xl font-semibold text-gray-900 mb-3">
-                {stat.title}
-              </h4>
-              <p className="font-body text-gray-600 leading-relaxed">{stat.description}</p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

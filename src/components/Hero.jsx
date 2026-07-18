@@ -3,6 +3,7 @@ import { cn } from '../utils.js';
 import { BACKGROUNDS, TIME_TO_CHANGE_BACKGROUND } from '../constants.js';
 import Button from './Button';
 import { useTranslation } from 'react-i18next';
+import ScrollReveal from './ScrollReveal.jsx';
 
 const Hero = ({ isScrolled }) => {
   const { t } = useTranslation();
@@ -36,27 +37,33 @@ const Hero = ({ isScrolled }) => {
       <div className={cn('absolute inset-0 z-0', BACKGROUNDS[currentBg].overlay)}></div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
-        <h1 className="font-heading font-bold text-5xl md:text-7xl text-white mb-6 drop-shadow-lg">
-          {t('hero.title_part1')}
-          <br />
-          <span className="text-m3-primary-container">{t('hero.title_part2')}</span>
-        </h1>
+        <ScrollReveal animation="fade-up" delay={100} duration={900}>
+          <h1 className="font-heading font-bold text-5xl md:text-7xl text-white mb-6 drop-shadow-lg">
+            {t('hero.title_part1')}
+            <br />
+            <span className="text-m3-primary-container">{t('hero.title_part2')}</span>
+          </h1>
+        </ScrollReveal>
 
-        <p className="font-body text-xl md:text-2xl text-white/90 mb-10 max-w-2xl drop-shadow-md">
-          {t('hero.subtitle')}
-        </p>
+        <ScrollReveal animation="fade-up" delay={300} duration={900}>
+          <p className="font-body text-xl md:text-2xl text-white/90 mb-10 max-w-2xl drop-shadow-md">
+            {t('hero.subtitle')}
+          </p>
+        </ScrollReveal>
 
-        <Button
-          variant="tertiary"
-          className="transition-all duration-300 shadow-m3-lg hover:shadow-m3-xl transform hover:-translate-y-1"
-          size="large"
-          onClick={() => {
-            const el = document.getElementById('paquetes');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-          }}
-        >
-          {t('hero.cta')}
-        </Button>
+        <ScrollReveal animation="fade-up" delay={500} duration={900}>
+          <Button
+            variant="tertiary"
+            className="transition-all duration-300 shadow-m3-lg hover:shadow-m3-xl transform hover:-translate-y-1"
+            size="large"
+            onClick={() => {
+              const el = document.getElementById('paquetes');
+              if (el) el.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            {t('hero.cta')}
+          </Button>
+        </ScrollReveal>
       </div>
     </div>
   );

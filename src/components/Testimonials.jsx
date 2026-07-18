@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import ScrollReveal from './ScrollReveal.jsx';
 
 const Testimonials = () => {
   const { t } = useTranslation();
@@ -26,42 +27,45 @@ const Testimonials = () => {
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-m3-primary-container rounded-full opacity-30 mix-blend-multiply blur-3xl"></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="font-heading text-4xl font-bold text-gray-900 mb-4">
-            {t('testimonials.title_part1')}{' '}
-            <span className="text-m3-primary">{t('testimonials.title_part2')}</span>
-          </h2>
-          <p className="font-body text-lg text-gray-600">{t('testimonials.subtitle')}</p>
-        </div>
+        <ScrollReveal animation="fade-up">
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <h2 className="font-heading text-4xl font-bold text-gray-900 mb-4">
+              {t('testimonials.title_part1')}{' '}
+              <span className="text-m3-primary">{t('testimonials.title_part2')}</span>
+            </h2>
+            <p className="font-body text-lg text-gray-600">{t('testimonials.subtitle')}</p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((test) => (
-            <div
-              key={test.id}
-              className="bg-white border border-m3-outline/20 rounded-m3 p-8 shadow-m3-sm hover:shadow-m3-md transition-shadow group relative"
-            >
-              {/* Quote icon watermark */}
-              <div className="absolute top-4 right-6 text-7xl text-gray-100 font-heading opacity-50 font-black">
-                "
-              </div>
-
-              <div className="flex mb-4">{renderStars(test.rating)}</div>
-
-              <blockquote
-                className="font-body text-gray-700 italic mb-6 relative z-10"
-                dangerouslySetInnerHTML={{ __html: `"${test.quote}"` }}
-              />
-
-              <div className="flex items-center gap-4 border-t border-gray-100 pt-4">
-                <div className="w-12 h-12 bg-m3-primary-container rounded-full flex items-center justify-center text-m3-primary font-heading font-bold text-lg uppercase shadow-m3-sm">
-                  {test.name.charAt(0)}
+          {testimonials.map((test, index) => (
+            <ScrollReveal key={test.id} animation="zoom-in" delay={index * 150} className="h-full">
+              <div className="bg-white border border-m3-outline/20 rounded-m3 p-8 shadow-m3-sm hover:shadow-m3-md transition-shadow group relative h-full flex flex-col justify-between">
+                {/* Quote icon watermark */}
+                <div className="absolute top-4 right-6 text-7xl text-gray-100 font-heading opacity-50 font-black">
+                  "
                 </div>
+
                 <div>
-                  <h4 className="font-heading font-semibold text-gray-900">{test.name}</h4>
-                  <p className="font-body text-sm text-m3-secondary">{test.destination}</p>
+                  <div className="flex mb-4">{renderStars(test.rating)}</div>
+
+                  <blockquote
+                    className="font-body text-gray-700 italic mb-6 relative z-10"
+                    dangerouslySetInnerHTML={{ __html: `"${test.quote}"` }}
+                  />
+                </div>
+
+                <div className="flex items-center gap-4 border-t border-gray-100 pt-4 mt-auto">
+                  <div className="w-12 h-12 bg-m3-primary-container rounded-full flex items-center justify-center text-m3-primary font-heading font-bold text-lg uppercase shadow-m3-sm">
+                    {test.name.charAt(0)}
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-semibold text-gray-900">{test.name}</h4>
+                    <p className="font-body text-sm text-m3-secondary">{test.destination}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
