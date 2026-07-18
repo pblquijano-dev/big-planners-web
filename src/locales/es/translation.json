@@ -6,7 +6,8 @@
     "packages": "Paquetes",
     "about": "Nosotros",
     "faq": "FAQ",
-    "testimonials": "Testimonios"
+    "testimonials": "Testimonios",
+    "language": "Idioma"
   },
   "hero": {
     "title_part1": "No viajas para escapar,",
