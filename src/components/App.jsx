@@ -7,9 +7,23 @@ import Testimonials from './Testimonials.jsx';
 import FAQ from './FAQ.jsx';
 import Footer from './Footer.jsx';
 import WhatsAppFAB from './WhatsAppFAB.jsx';
+import Loader from './Loader.jsx';
 
 const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Force scrolling prevention during load
+    if (isLoading) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isLoading]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +36,22 @@ const App = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // Minimum delay to guarantee beautiful entrance animation sequence
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1800);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
     <div className="flex flex-col min-h-screen bg-m3-surface">
+      <Loader show={isLoading} />
+
       <Navbar isScrolled={isScrolled} />
 
       <main className="flex-grow">

@@ -1,4 +1,7 @@
 {
+  "loading": {
+    "message": "Preparando tu próxima aventura..."
+  },
   "navbar": {
     "packages": "Paquetes",
     "about": "Nosotros",
