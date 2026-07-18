@@ -14,6 +14,7 @@ module.exports = (env, argv) => {
       filename: isProduction ? '[name].[contenthash].js' : '[name].js',
       clean: true,
       assetModuleFilename: 'images/[hash][ext][query]',
+      publicPath: '/big-planners-web/',
     },
     module: {
       rules: [
