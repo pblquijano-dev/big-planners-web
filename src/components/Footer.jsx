@@ -19,6 +19,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/Bigplannersmid"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-m3-primary hover:text-white transition-colors"
+                aria-label="Facebook"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -33,6 +34,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/bigplannersmid/"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-m3-primary hover:text-white transition-colors"
+                aria-label="Instagram"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path

@@ -1,0 +1,34 @@
+# Big Planners - Travel Agency
+
+> The official website of Big Planners, a travel agency that designs custom trips, national and international holiday packages, and travel advisor services.
+
+## Site Structure and Navigation
+
+This is a Single Page Application (SPA). Users and AI agents can navigate the page using the main header links:
+
+- **Hero / Header**: Features beautiful sliding images of travel destinations and a main button to explore travel packages.
+- **Testimonials**: Reviews from customers who have traveled with us.
+- **Packages**: Interactive cards showing popular trips (Cancún, Europe, Japan, Peru). Clicking a card opens a modal with more details.
+- **Benefits**: Key reasons to trust our agency and our credentials.
+- **FAQ**: An accordion section with answers to common questions about bookings, payments, and services.
+- **Contact**: Address details in Mérida, Yucatán, and links to social media accounts.
+
+## AI Agent Interactions and Tools
+
+### Package Quotation (Modal Windows)
+In the `#packages` section, every travel card has a button called "View Details" or "Cotizar" (Quote).
+- When clicked, a modal window opens with:
+  - Trip duration (e.g., 5 days)
+  - Starting price
+  - What is included (flights, hotel, tours, transfers, etc.)
+  - A button to request a quote via WhatsApp.
+
+### Contact and Booking Links
+- **Direct WhatsApp link**: The main way to contact us is a WhatsApp button. It opens `https://wa.me/5215512345678` with a pre-filled text (e.g., *"Hello Big Planners, I want a quote for the Cancun package"*).
+- **Floating WhatsApp button**: Always available in the bottom-right corner of the screen for quick messaging.
+
+## Social Media and Legal Info
+- **Facebook**: [Official Facebook Page](https://www.facebook.com/Bigplannersmid)
+- **Instagram**: [Official Instagram Page](https://www.instagram.com/bigplannersmid/)
+- **Privacy Policy**: Link is located in the footer.
+- **Terms of Service**: Link is located in the footer.

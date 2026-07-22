@@ -52,6 +52,31 @@ module.exports = (env, argv) => {
         favicon: './src/assets/images/big-planners.webp',
       }),
       ...(isProduction ? [new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' })] : []),
+      new (class {
+        apply(compiler) {
+          compiler.hooks.thisCompilation.tap('EmitLlmsTxtPlugin', (compilation) => {
+            compilation.hooks.processAssets.tap(
+              {
+                name: 'EmitLlmsTxtPlugin',
+                stage: compiler.webpack.Compilation.PROCESS_ASSETS_STAGE_ADDITIONAL,
+              },
+              () => {
+                const fs = require('fs');
+                const path = require('path');
+                try {
+                  const content = fs.readFileSync(path.resolve(__dirname, 'public/llms.txt'), 'utf8');
+                  compilation.emitAsset(
+                    'llms.txt',
+                    new compiler.webpack.sources.RawSource(content)
+                  );
+                } catch (e) {
+                  // Fallback
+                }
+              }
+            );
+          });
+        }
+      })(),
     ],
     optimization: {
       minimize: isProduction,
