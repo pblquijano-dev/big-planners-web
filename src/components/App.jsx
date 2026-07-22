@@ -40,7 +40,7 @@ const App = () => {
     // Minimum delay to guarantee beautiful entrance animation sequence
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1800);
+    }, 200);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);

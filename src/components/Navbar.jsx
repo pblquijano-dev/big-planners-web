@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../assets/images/big-planners.png';
+import logo from '../assets/images/big-planners.webp';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../utils';
 

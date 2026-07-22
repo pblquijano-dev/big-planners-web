@@ -5,10 +5,10 @@ import Modal from './Modal.jsx';
 import ScrollReveal from './ScrollReveal.jsx';
 
 // Images
-import cancunImg from '../assets/images/cancun.png';
-import europaImg from '../assets/images/europa.png';
-import peruImg from '../assets/images/peru.png';
-import japonImg from '../assets/images/japon.png';
+import cancunImg from '../assets/images/cancun.webp';
+import europaImg from '../assets/images/europa.webp';
+import peruImg from '../assets/images/peru.webp';
+import japonImg from '../assets/images/japon.webp';
 
 const packagesImages = [cancunImg, europaImg, peruImg, japonImg];
 

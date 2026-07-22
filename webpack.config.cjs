@@ -38,7 +38,7 @@ module.exports = (env, argv) => {
           ],
         },
         {
-          test: /\.(png|jpe?g|gif|svg)$/i,
+          test: /\.(png|jpe?g|gif|svg|webp)$/i,
           type: 'asset/resource',
         },
       ],
@@ -49,12 +49,16 @@ module.exports = (env, argv) => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './public/index.html',
+        favicon: './src/assets/images/big-planners.webp',
       }),
       ...(isProduction ? [new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' })] : []),
     ],
     optimization: {
       minimize: isProduction,
       minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
+      splitChunks: {
+        chunks: 'all',
+      },
     },
     devServer: {
       port: 3004,

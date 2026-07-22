@@ -1,8 +1,8 @@
-import beachImage from './assets/images/beach-green.jpg';
-import colombiaImage from './assets/images/forest-colombia.jpg';
-import hotelImage from './assets/images/hotel-pool.jpg';
-import milan from './assets/images/milan.jpg';
-import cenote from './assets/images/cenote-casa.jpg';
+import beachImage from './assets/images/beach-green.webp';
+import colombiaImage from './assets/images/forest-colombia.webp';
+import hotelImage from './assets/images/hotel-pool.webp';
+import milan from './assets/images/milan.webp';
+import cenote from './assets/images/cenote-casa.webp';
 
 export const BACKGROUNDS = [
   { img: beachImage, alt: 'Beach', bgPosition: 'bg-center', overlay: 'bg-black/60' },
